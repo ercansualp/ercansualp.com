@@ -9,7 +9,7 @@ type props = {
 
 export default function Section(props: props) {
     const { title, description, children } = props;
-    const { height, width } = UseWindowDimensions();
+    const { width } = UseWindowDimensions();
 
     return (
         <div className="mt-32 flex flex-col items-center">

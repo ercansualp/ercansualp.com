@@ -24,7 +24,7 @@ export default function Footer() {
                 </Link>
             </div>
             <div className="mb-16">
-                <small className="text-[#1f1f38]">2023 © Ercan SUALP Personal Website. All rights reserved.</small>
+                <small className="text-[#1f1f38]">{new Date().getFullYear()} &copy; Ercan SUALP Personal Website. All rights reserved.</small>
             </div>
             <div className="fixed z-50 left-1/5 bottom-8 bg-[#0000004d] rounded-[48px] py-3 px-7 flex items-center justify-center gap-x-3">
                 <Link to={"/"} className="rounded-full p-3.5 bg-[#4db5ff] transition-all">

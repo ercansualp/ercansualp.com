@@ -1,5 +1,3 @@
-import {Link} from "react-router-dom";
-
 export default function About() {
     return (
         <div className="mt-32 flex flex-col items-center">
@@ -8,9 +6,6 @@ export default function About() {
             <div className="text-white leading-[27.2px] text-[#ffffff99] mt-8 mb-10">
                 Hakkımda..
             </div>
-            <Link to={"/"} className="bg-[#4db5ff] text-[#1f1f38] rounded-md py-3 px-5">
-                Let's Talk
-            </Link>
         </div>
     )
 }

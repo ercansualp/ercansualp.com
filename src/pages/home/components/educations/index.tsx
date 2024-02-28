@@ -1,9 +1,7 @@
 import Education from "~/assets/img/marmara.png";
-import UseWindowDimensions from "~/utils/UseWindowDimensions.tsx";
 import Section from "~/pages/home/components/section";
 
 export default function Educations() {
-    const { height, width } = UseWindowDimensions();
 
     return (
         <Section title="Education" description="Degrees that I have">

@@ -8,8 +8,8 @@ export default function Header() {
                 <h1 className="font-medium leading-[68px] text-[40px] text-white">Ercan SUALP</h1>
                 <h5 className="text-[13.28px] leading-[22.576px] font-medium text-[#ffffff99]">Full-Stack Web Developer</h5>
                 <div className="flex gap-5 mt-10">
-                    <Link to={"/"} className="py-3 px-5 border border-[#4db5ff] text-[#4db5ff] rounded-lg ">Download CV</Link>
-                    <Link to={"/"} className="py-3 px-5 bg-[#4db5ff] text-[#1f1f38] rounded-lg ">Contact Me</Link>
+                    <Link to={"/"} className="py-3 px-5 border border-[#4db5ff] text-[#4db5ff] rounded-lg transition-all hover:bg-white hover:text-black hover:border-white">Download CV</Link>
+                    <Link to={"/"} className="py-3 px-5 bg-[#4db5ff] text-[#1f1f38] rounded-lg transition-all hover:bg-white hover:text-black hover:border-white">Contact Me</Link>
                 </div>
                 <div className="flex gap-5 mt-10 text-[#4db5ff]">
                     <Link to={"/"} className="group">

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 export default function Project() {
     return (
-        <article className="p-5 flex flex-col rounded-3xl bg-[#2c2c6c]">
+        <article className="p-5 flex flex-col rounded-3xl bg-[#2c2c6c] hover:bg-transparent transition-all border border-[#2c2c6c] hover:border-[#4db5ff66]">
             <img src={Example} alt="" className="rounded-3xl"/>
             <h3 className="mt-5 mb-8 leading-8 text-white text-xl">Python Flask Instagram Replica</h3>
             <div className="mb-4 flex">

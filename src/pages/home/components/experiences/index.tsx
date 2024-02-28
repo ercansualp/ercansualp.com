@@ -4,7 +4,7 @@ import DigishifterLogo from "~/assets/img/Digishifter.png";
 export default function Experiences(){
     return (
         <Section title="Job Experience" description="Employment History">
-            <div className="w-[700px] mx-auto flex flex-col items-center rounded-br-3xl border border-[#4db5ff] bg-[#2c2c6c]">
+            <div className="w-[700px] flex flex-col items-center rounded-br-3xl border border-[#4db5ff] bg-[#2c2c6c] max-w-full mx-auto">
                 <img src={DigishifterLogo} alt="" width={150} className="py-2"/>
                 <div className="flex flex-col bg-[#4db5ff] rounded-b-3xl w-full items-center py-2 gap-y-1">
                     <h3 className="text-[#1f1f38] font-semibold	text-base leading-5">Full Stack Web Developer at Digishifter</h3>

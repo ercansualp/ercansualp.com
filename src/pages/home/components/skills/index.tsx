@@ -1,10 +1,17 @@
+import UseWindowDimensions from "~/utils/UseWindowDimensions.tsx";
+import classNames from "classnames";
+
 export default function Skills() {
+    const { height, width } = UseWindowDimensions();
+
     return (
         <div className="mt-32 flex flex-col items-center">
             <h5 className="text-[#ffffff99] font-normal text-[13.28px] leading-[22.576px]">What Skills I Have</h5>
             <h2 className="text-[#4db5ff] font-normal text-2xl leading-10 mb-12">My Skills</h2>
-            <div className="container grid grid-cols-2 gap-x-8">
-                <div className="py-10 px-20 bg-[#2c2c6c] rounded-3xl flex flex-col gap-y-8">
+            <div className="container grid grid-cols-2 gap-8">
+                <div className={classNames("py-10 px-20 bg-[#2c2c6c] rounded-3xl flex flex-col gap-y-8", {
+                    "col-span-full mx-5": width < 1025
+                })}>
                     <h3 className="text-[#4db5ff] font-normal text-lg leading-10 text-center">Frontend Development</h3>
                     <div className="grid grid-cols-2 gap-y-8">
                         <div className="flex gap-x-4">
@@ -51,7 +58,9 @@ export default function Skills() {
                         </div>
                     </div>
                 </div>
-                <div className="py-10 px-20 bg-[#2c2c6c] rounded-3xl flex flex-col gap-y-8">
+                <div className={classNames("py-10 px-20 bg-[#2c2c6c] rounded-3xl flex flex-col gap-y-8", {
+                    "col-span-full mx-5": width < 1025
+                })}>
                     <h3 className="text-[#4db5ff] font-normal text-lg leading-10 text-center">Backend Development</h3>
                     <div className="grid grid-cols-2 gap-y-8">
                         <div className="flex gap-x-4">

@@ -2,7 +2,11 @@ import Item from "./item";
 import {useState} from "react";
 
 export default function Contact() {
-    const [values, setValues] = useState();
+    const [values, setValues] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
 
     const handleChange = (event: any) => {
         setValues({

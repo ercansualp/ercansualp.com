@@ -5,12 +5,10 @@ export default function Contact() {
     const [values, setValues] = useState();
 
     const handleChange = (event: any) => {
-        setValues((data: any) => {
-            return {
-                ...data,
-                [event.target.name]: event.target.value
-            };
-        })
+        setValues({
+            ...values,
+            [event.target.name]: event.target.value
+        });
     }
 
     return (

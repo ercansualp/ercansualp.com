@@ -7,7 +7,7 @@ export default function Portfolio(){
     const { width } = UseWindowDimensions();
 
     return (
-        <Section title="Portfolio" description="My Projects">
+        <Section id="portfolio" title="Portfolio" description="My Projects">
             <div className={classNames({
                 "grid gap-10 items-center": width && width > 600,
                 "grid-cols-3": width && width >= 1025,

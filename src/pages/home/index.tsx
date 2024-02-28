@@ -10,7 +10,7 @@ import Background from "~/assets/img/background.png";
 
 export default function Home() {
     return (
-        <div className="overscroll-none bg-[#1f1f38]" style={{ backgroundImage: `url("${Background}")` }}>
+        <div id="#" className="overscroll-none bg-[#1f1f38]" style={{ backgroundImage: `url("${Background}")` }}>
             <Header />
             <About />
             <Skills />

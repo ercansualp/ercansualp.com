@@ -5,7 +5,7 @@ export default function Skills() {
     const { width } = UseWindowDimensions();
 
     return (
-        <div className="mt-32 flex flex-col items-center">
+        <div className="mt-32 flex flex-col items-center" id="skills">
             <h5 className="text-[#ffffff99] font-normal text-[13.28px] leading-[22.576px]">What Skills I Have</h5>
             <h2 className="text-[#4db5ff] font-normal text-2xl leading-10 mb-12">My Skills</h2>
             <div className="container grid grid-cols-2 gap-8">

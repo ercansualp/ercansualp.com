@@ -7,7 +7,7 @@ export default function Educations() {
     const { width } = UseWindowDimensions();
 
     return (
-        <Section title="Education" description="Degrees that I have">
+        <Section id="education" title="Education" description="Degrees that I have">
             <div className="rounded-3xl p-8 bg-[#2c2c6c] flex flex-col items-center w-[768px] max-w-full mx-auto hover:bg-transparent transition-all border border-[#2c2c6c] ">
                 <img src={Education} alt="" className="w-[116px] h-[116px] border-[6px] border-[#4db5ff66] rounded-full"/>
                 <h5 className="mt-4 text-white font-normal text-sm leading-5 text-center">Marmara University İstanbul - Computer Programming</h5>

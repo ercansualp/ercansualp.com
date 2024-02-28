@@ -20,7 +20,7 @@ export default function Contact() {
     }
 
     return (
-        <div className="mt-32 flex flex-col items-center">
+        <div id="contact" className="mt-32 flex flex-col items-center">
             <h5 className="text-[#ffffff99] font-normal text-sm leading-6">Get In Touch</h5>
             <h2 className="mb-12 text-[#4db5ff] font-normal text-2xl leading-10">Contact Me</h2>
             <div className={classNames("grid gap-8 w-[58%] mx-auto", {

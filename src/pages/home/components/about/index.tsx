@@ -1,11 +1,11 @@
+import Section from "~/pages/home/components/section";
+
 export default function About() {
     return (
-        <div id="about" className="mt-32 flex flex-col items-center">
-            <h5 className="text-[13.28px] leading-[22.576px] font-medium text-[#ffffff99]">Get To Know</h5>
-            <h2 className="text-[#4db5ff] font-normal text-2xl leading-[40.8px]">About Me</h2>
-            <div className="text-white leading-[27.2px] text-[#ffffff99] mt-8 mb-10">
-                Hakkımda..
+        <Section id="about" title="About Me" description="Get To Know">
+            <div className="leading-[27.2px] text-[#ffffff99] text-center">
+                Full-stack developer with experience working with expertise of technologies such as HTML, CSS, Javascript, Jquery, ReactJS, ContextAPI, Redux, Firebase, PHP, MySQL, MSSQL, Postgresql, TailwindCSS, Material UI, Bootstrap, TypeScript, Python and more. I have 7 months of work experience at DigiShifter company.
             </div>
-        </div>
+        </Section>
     )
 }

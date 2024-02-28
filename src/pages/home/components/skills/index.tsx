@@ -59,7 +59,7 @@ export default function Skills() {
                     </div>
                 </div>
                 <div className={classNames("py-10 px-20 bg-[#2c2c6c] rounded-3xl flex flex-col gap-y-8", {
-                    "col-span-full mx-5": width < 1025
+                    "col-span-full mx-5": width && width < 1025
                 })}>
                     <h3 className="text-[#4db5ff] font-normal text-lg leading-10 text-center">Backend Development</h3>
                     <div className="grid grid-cols-2 gap-y-8">

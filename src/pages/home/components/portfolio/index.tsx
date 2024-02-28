@@ -8,10 +8,10 @@ export default function Portfolio(){
 
     return (
         <Section title="Portfolio" description="My Projects">
-            <div className={classNames("grid gap-10 items-center", {
+            <div className={classNames({
+                "grid gap-10 items-center": width && width > 600,
                 "grid-cols-3": width && width >= 1025,
-                "grid-cols-2": width && width < 1025,
-                "grid-cols-1": width && width < 601
+                "grid-cols-2": width && width < 1025 && width > 600,
             })}>
                 <Project />
             </div>

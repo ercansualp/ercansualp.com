@@ -1,7 +1,11 @@
 import Item from "./item";
 import {useState} from "react";
+import classNames from "classnames";
+import UseWindowDimensions from "~/utils/UseWindowDimensions.tsx";
 
 export default function Contact() {
+    const { width } = UseWindowDimensions();
+
     const [values, setValues] = useState({
         name: '',
         email: '',
@@ -19,8 +23,11 @@ export default function Contact() {
         <div className="mt-32 flex flex-col items-center">
             <h5 className="text-[#ffffff99] font-normal text-sm leading-6">Get In Touch</h5>
             <h2 className="mb-12 text-[#4db5ff] font-normal text-2xl leading-10">Contact Me</h2>
-            <div className="grid gap-x-[12%] grid-cols-[30%_58%] w-[58%] mx-auto">
-                <div className="flex flex-col gap-y-5 text-white">
+            <div className={classNames("grid gap-8 w-[58%] mx-auto", {
+                "grid-cols-[30%_58%]": width && width >= 1025,
+                "grid-cols-1": width && width < 1025
+            })}>
+                <div className="flex flex-col gap-5 text-white">
                     <Item
                         logo={<svg className="mb-2" stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1.5em" width="1.5em"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" /></svg>}
                         title="Email"

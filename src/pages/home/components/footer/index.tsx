@@ -1,10 +1,16 @@
 import {Link} from "react-router-dom";
+import UseWindowDimensions from "~/utils/UseWindowDimensions.tsx";
+import classNames from "classnames";
 
 export default function Footer() {
+    const { width } = UseWindowDimensions();
+
     return (
         <div className="mt-28 py-12 flex flex-col items-center bg-[#4db5ff] text-[#1f1f38]">
             <Link to={"/"} className="text-3xl mb-8">ERCAN SUALP</Link>
-            <ul className="mb-12 flex items-center justify-center gap-x-8">
+            <ul className={classNames("mb-12 flex items-center justify-center gap-8", {
+                "flex-col": width && width < 601
+            })}>
                 <li className="hover:text-white"><Link to={"/"}>Home</Link></li>
                 <li className="hover:text-white"><Link to={"/"}>About</Link></li>
                 <li className="hover:text-white"><Link to={"/"}>Skills</Link></li>

@@ -1,10 +1,11 @@
 import UseWindowDimensions from "~/utils/UseWindowDimensions.tsx";
 import classNames from "classnames";
+import {ReactNode} from "react";
 
 type props = {
     title: string;
     description: string;
-    children: any;
+    children: ReactNode;
     id: string;
 }
 

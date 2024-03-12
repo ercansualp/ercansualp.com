@@ -1,10 +1,14 @@
 import Section from "~/pages/home/components/section";
-import Project from "~/pages/home/components/portfolio/project";
+import Job from "~/pages/home/components/portfolio/job";
 import classNames from "classnames";
 import UseWindowDimensions from "~/utils/UseWindowDimensions.tsx";
+import Example from "~/assets/img/example.jpg";
 
 export default function Portfolio(){
     const { width } = UseWindowDimensions();
+    const jobs = [
+        { title: "Python Flask Instagram Replica", picture: {Example}, url: "/" }
+    ];
 
     return (
         <Section id="portfolio" title="Portfolio" description="My Projects">
@@ -13,7 +17,11 @@ export default function Portfolio(){
                 "grid-cols-3": width && width >= 1025,
                 "grid-cols-2": width && width < 1025 && width > 600,
             })}>
-                <Project />
+                {
+                    jobs.map((job, index) => (
+                        <Job key={index} title={job.title} picture={(job.picture as unknown) as string} url={job.url} />
+                    ))
+                }
             </div>
         </Section>
     )

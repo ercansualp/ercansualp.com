@@ -43,8 +43,8 @@ export default function Contact() {
                         </svg>}
                         title="WhatsApp"
                         actionText="Send a Message"
-                        contentText="+90 533 349 69 51"
-                        action="https://wa.me/905333496951"
+                        contentText="+90 553 349 69 51"
+                        action="https://wa.me/905533496951"
                     />
                 </div>
                 <form className="flex flex-col gap-y-5 text-white text-xs font-normal">
